@@ -1,10 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Header from './Components/Header';
 
 const App = () => {
   return (
     <div>
-      <h4>App</h4>
+      <Header/>
       <Outlet></Outlet>
     </div>
   );
