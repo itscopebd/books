@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Bars3Icon, BoltIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Link, NavLink } from 'react-router-dom';
+
 const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,7 +23,7 @@ const Header = () => {
           <li> <NavLink to="/about" className={({ isActive }) => (isActive ? "text-blue-500" : "")} >About</NavLink> </li>
         </ul>
         {/* mobile menu  */}
-        <div className='lg:hidden'>
+        <div className='md:hidden'>
           <button onClick={() => setIsMenuOpen(true)}>
             <Bars3Icon className="h-6 w-6 text-white" />
           </button>
